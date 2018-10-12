@@ -144,6 +144,11 @@ header nav ul li a {
   color: #111;
 
 }
+.social-icons{
+  float: right;
+  padding-right: 20px;
+
+}
 
 
 
@@ -306,7 +311,7 @@ header nav ul li a {
   width: 600px;
   display: block;
   margin: 0 auto;
-  
+
 }
 .case-vid article h3{
   font-family: 'Nunito Sans', sans-serif;
