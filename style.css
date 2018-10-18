@@ -1,105 +1,193 @@
-
-
-
-html, body, div, span, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-abbr, address, cite, code,
-del, dfn, em, img, ins, kbd, q, samp,
-small, strong, sub, sup, var,
-b, i,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section, summary,
-time, mark, audio, video {
-    margin:0;
-    padding:0;
-    border:0;
-    outline:0;
-    font-size:100%;
-    vertical-align:baseline;
-    background:transparent;
+html,
+body,
+body div,
+span,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+abbr,
+address,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+samp,
+small,
+strong,
+sub,
+sup,
+var,
+b,
+i,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: bottom;
+  background: transparent;
 }
+article,
+aside,
+figure,
+footer,
+header,
+hgroup,
+nav,
+section {
+  display: block;
+}
+/* Variables =================================================== */
+/* Mixins =================================================== */
+
 
 body {
-    line-height:1;
+  line-height: 1;
 }
 
-article,aside,details,figcaption,figure,
-footer,header,hgroup,menu,nav,section {
-    display:block;
+h1,
+.h1,
+h2,
+.h2 {
+  margin: 0;
+  color: #111111;
+  text-rendering: optimizelegibility;
+  font-weight: normal;
+}
+h1,
+.h1 {
+  margin-bottom: 0.1em;
+  font-size: 48px;
+  font-size: 4.8rem;
+  line-height: 1.2em;
+  font-family: "neosans regular", "Helvetica Neue", Helvetica, Arial, Sans-serif;
+  letter-spacing: -0.07em;
+}
+h2,
+.h2 {
+  margin-bottom: 0.5em;
+  font-size: 28px;
+  font-size: 2.8rem;
+  line-height: 1.2em;
+}
+ul.ul,
+ol.ol {
+  list-style-type: disc;
+  padding-left: 2em;
+  margin-bottom: 1.4em;
+  line-height: 1.4em;
+}
+ul.ul li,
+ol.ol li {
+  margin-bottom: 0.7em;
+}
+section.dark {
+  border-bottom: #dddddd solid 1px;
+  padding: 3em 1.5em;
+  overflow: hidden;
+}
+/* Pie Chart */
+.pie-chart {
+  text-align: center;
+  overflow: hidden;
+}
+.pie-chart ul {
+  list-style-type: none;
+  padding: 0;
+}
+.pie-chart .designer,
+.pie-chart .coder {
+  float: none;
+  margin-bottom: 3em;
+  overflow: hidden;
 }
 
 nav ul {
-    list-style:none;
+  list-style: none;
 }
 
 blockquote, q {
-    quotes:none;
+  quotes: none;
 }
 
-blockquote:before, blockquote:after,
-q:before, q:after {
-    content:'';
-    content:none;
-}
 
 a {
-    margin:0;
-    padding:0;
-    font-size:100%;
-    vertical-align:baseline;
-    background:transparent;
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
 }
 
-ins {
-    background-color:#ff9;
-    color:#000;
-    text-decoration:none;
-}
-
-mark {
-    background-color:#ff9;
-    color:#000;
-    font-style:italic;
-    font-weight:bold;
-}
-
-del {
-    text-decoration: line-through;
-}
-
-abbr[title], dfn[title] {
-    border-bottom:1px dotted;
-    cursor:help;
-}
 
 table {
-    border-collapse:collapse;
-    border-spacing:0;
+  border-collapse: collapse;
+  border-spacing: 0;
 }
 
 hr {
-    display:block;
-    height:1px;
-    border:0;
-    border-top:1px solid #cccccc;
-    margin:1em 0;
-    padding:0;
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #cccccc;
+  margin: 1em 0;
+  padding: 0;
 }
 
 input, select {
-    vertical-align:middle;
+  vertical-align: middle;
 }
-
-
 
 /*ALL HTML elements gets this styling*/
 * {
   text-decoration: none;
 }
-main{
+
+main {
   padding-top: 100px;
 }
 
@@ -107,7 +195,7 @@ main{
 header {
   position: fixed;
   top: 0;
-  right:0;
+  right: 0;
   left: 0;
   background-color: #fff;
   width: 100%;
@@ -142,16 +230,13 @@ header nav ul li a {
   font-family: 'Nunito Sans', sans-serif;
   font-size: 16px;
   color: #111;
-
-}
-.social-icons{
-  float: right;
-  padding-right: 20px;
-
 }
 
 
 
+#content-detail {
+  position: relative;
+}
 
 /* style the header for the desktop version*/
 @media only screen and (min-width: 1000px) {
@@ -172,10 +257,10 @@ header nav ul li a {
   header nav ul li a {
     line-height: 60px;
   }
-
 }
-/*INDEX*/
 
+
+/*INDEX*/
 .index-banner {
   width: 100%;
   height: calc(100vh - 100px);
@@ -226,14 +311,13 @@ header nav ul li a {
   line-height: 100px;
   color: #111;
   text-align: center;
-
 }
 
 /* style the main content for the desktop version*/
 @media only screen and (min-width: 1000px) {
   .wrapper {
-      width: 1000px;
-      margin: 0 auto;
+    width: 1000px;
+    margin: 0 auto;
   }
 
   .index-banner {
@@ -269,18 +353,21 @@ header nav ul li a {
     line-height: 230px;
   }
 }
+
 /* Cases */
-.cases-links{
+.cases-links {
   overflow: hidden;
   margin-bottom: 20px;
 }
-.cases-links h2{
+
+.cases-links h2 {
   font-family: 'Nunito Sans', sans-serif;
   font-size: 28px;
   font-weight: 600;
   color: #111;
 }
-.cases-links p{
+
+.cases-links p {
   padding-top: 45%;
   font-family: 'Nunito Sans', sans-serif;
   font-size: 24px;
@@ -288,7 +375,8 @@ header nav ul li a {
   color: #111;
   text-align: center;
 }
-.cases-links .cases-link{
+
+.cases-links .cases-link {
   float: left;
   width: 230px;
   height: 230px;
@@ -296,10 +384,8 @@ header nav ul li a {
   background-color: #e3e3e3;
 }
 
-
 /* Video */
-
-.case-vid h2{
+.case-vid h2 {
   font-family: 'Nunito Sans', sans-serif;
   font-size: 28px;
   font-weight: 600;
@@ -307,13 +393,14 @@ header nav ul li a {
   text-align: center;
   padding: 30px 0;
 }
-.case-vid video{
+
+.case-vid video {
   width: 600px;
   display: block;
   margin: 0 auto;
-
 }
-.case-vid article h3{
+
+.case-vid article h3 {
   font-family: 'Nunito Sans', sans-serif;
   font-size: 28px;
   font-weight: 600;
@@ -321,7 +408,8 @@ header nav ul li a {
   padding: 30px 0;
   padding-bottom: 20px;
 }
-.case-vid article div p{
+
+.case-vid article div p {
   font-family: 'Nunito Sans', sans-serif;
   font-size: 16px;
   font-weight: 600;
@@ -332,9 +420,7 @@ header nav ul li a {
   column-gap: 30px;
 }
 
-
 /*FOOTER*/
-
 footer {
   width: calc(100% - 70px);
   padding: 40px 40px;
@@ -350,8 +436,6 @@ footer ul {
   padding-left: 20px;
   padding-top: 20px;
   text-align: left;
-
-
 }
 
 footer ul li {
@@ -360,7 +444,7 @@ footer ul li {
 }
 
 footer ul li a {
-font-family: 'Nunito Sans', sans-serif;
+  font-family: 'Nunito Sans', sans-serif;
   font-size: 24px;
   color: #fff;
   line-height: 40px;
@@ -369,7 +453,6 @@ font-family: 'Nunito Sans', sans-serif;
 .footer-sm {
   width: 50px;
   float: right;
-
 }
 
 .footer-sm img {
@@ -377,18 +460,57 @@ font-family: 'Nunito Sans', sans-serif;
   margin-bottom: 10px;
   margin: 10px;
 }
-.left {
-    float: left !important;
-}
 
+.left {
+  float: left !important;
+}
 
 /* style the footer for the desktop version*/
 @media only screen and (min-width: 1000px) {
-
-
   footer ul {
     padding-right: 30px;
   }
+  #content-detail {
+    padding-bottom: 6em !important;
+  }
+  .row {
+    clear: both;
+    max-width: 1040px;
+    margin: 0 auto;
+    overflow: hidden;
+  }
 
+  /* Pie chart */
+  .pie-chart .designer,
+  .pie-chart .coder {
+    padding-top: 3em;
+    width: auto;
+    margin: 16px 16px 0;
+    overflow: hidden;
+  }
+  .pie-chart .coder {
+    float: right;
+    margin-bottom: 0;
+    text-align: center;
+  }
+  .pie-chart .designer {
+    float: left;
+    margin: 0;
+    text-align: center;
+
+  }
+  .pie-chart img {
+    width: auto;
+    padding:20px;
+    text-align: center;
+  }
+  .pie-chart ul li {
+    display: block;
+
+  }
+  section.dark{
+    padding: 6em 5%;
+    overflow: hidden;
+  }
 
 }
