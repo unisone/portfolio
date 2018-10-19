@@ -71,6 +71,7 @@ video {
   vertical-align: bottom;
   background: transparent;
 }
+
 article,
 aside,
 figure,
@@ -81,12 +82,11 @@ nav,
 section {
   display: block;
 }
-/* Variables =================================================== */
-/* Mixins =================================================== */
 
 
 body {
   line-height: 1;
+
 }
 
 h1,
@@ -97,7 +97,9 @@ h2,
   color: #111111;
   text-rendering: optimizelegibility;
   font-weight: normal;
+
 }
+
 h1,
 .h1 {
   margin-bottom: 0.1em;
@@ -105,8 +107,10 @@ h1,
   font-size: 4.8rem;
   line-height: 1.2em;
   font-family: "neosans regular", "Helvetica Neue", Helvetica, Arial, Sans-serif;
-  letter-spacing: -0.07em;
+  font-weight: bolder;
+  letter-spacing: 1px;
 }
+
 h2,
 .h2 {
   margin-bottom: 0.5em;
@@ -114,31 +118,38 @@ h2,
   font-size: 2.8rem;
   line-height: 1.2em;
 }
-ul.ul,
-ol.ol {
+
+ul.ul {
   list-style-type: disc;
   padding-left: 2em;
   margin-bottom: 1.4em;
-  line-height: 1.4em;
+  line-height: 2.4em;
+  font-weight: bolder;
 }
+
 ul.ul li,
 ol.ol li {
   margin-bottom: 0.7em;
 }
+
+
 section.dark {
   border-bottom: #dddddd solid 1px;
   padding: 3em 1.5em;
   overflow: hidden;
 }
+
 /* Pie Chart */
 .pie-chart {
   text-align: center;
   overflow: hidden;
 }
+
 .pie-chart ul {
   list-style-type: none;
   padding: 0;
 }
+
 .pie-chart .designer,
 .pie-chart .coder {
   float: none;
@@ -150,11 +161,6 @@ nav ul {
   list-style: none;
 }
 
-blockquote, q {
-  quotes: none;
-}
-
-
 a {
   margin: 0;
   padding: 0;
@@ -163,24 +169,6 @@ a {
   background: transparent;
 }
 
-
-table {
-  border-collapse: collapse;
-  border-spacing: 0;
-}
-
-hr {
-  display: block;
-  height: 1px;
-  border: 0;
-  border-top: 1px solid #cccccc;
-  margin: 1em 0;
-  padding: 0;
-}
-
-input, select {
-  vertical-align: middle;
-}
 
 /*ALL HTML elements gets this styling*/
 * {
@@ -232,8 +220,6 @@ header nav ul li a {
   color: #111;
 }
 
-
-
 #content-detail {
   position: relative;
 }
@@ -249,32 +235,33 @@ header nav ul li a {
     float: left;
   }
 
+
   header nav ul {
     margin: 20px 0px 0px 20px;
-    float: left;
+    float: right;
+    margin-right: 20px;
+    font-weight: bolder;
+
   }
 
   header nav ul li a {
     line-height: 60px;
+    margin: 20px;
   }
 }
-
 
 /*INDEX*/
 .index-banner {
   width: 100%;
   height: calc(100vh - 100px);
-  background-image: url('img/banner.jpeg');
+  background-image: url('img/banner.png');
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   display: table;
+
 }
 
-.vertical-center {
-  display: table-cell;
-  vertical-align: middle;
-}
 
 .index-banner h2 {
   font-family: 'Nunito Sans', sans-serif;
@@ -296,12 +283,17 @@ header nav ul li a {
   text-align: center;
   text-shadow: 2px 2px 8px #111;
 }
+.index-links{
+  border-bottom: #dddddd solid 1px;
+  padding: 3em 1.5em;
 
+}
 .index-links div {
   margin: 16px 16px 0;
   width: calc(100% - 32px);
   height: 100px;
-  background-color: #f2f2f2;
+  background-color: #111;
+  letter-spacing: 1em;
 }
 
 .index-links div h3 {
@@ -309,8 +301,10 @@ header nav ul li a {
   font-size: 28px;
   font-weight: 600;
   line-height: 100px;
-  color: #111;
+  color: #fff;
   text-align: center;
+  letter-spacing: 0.1;
+
 }
 
 /* style the main content for the desktop version*/
@@ -318,6 +312,7 @@ header nav ul li a {
   .wrapper {
     width: 1000px;
     margin: 0 auto;
+    overflow: hidden;
   }
 
   .index-banner {
@@ -332,6 +327,7 @@ header nav ul li a {
 
   .index-links {
     overflow: hidden;
+
   }
 
   .index-links div {
@@ -339,10 +335,49 @@ header nav ul li a {
     height: 230px;
     background-color: #f2f2f2;
     float: left;
+    text-shadow: 1px 1px 1px #111;
+    letter-spacing: 5px;
   }
 
   .index-boxlink-square {
     width: calc(25% - 20px) !important;
+
+  }
+  .lin1{
+    background-image: url("img/link1.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+  .lin2{
+    background-image: url("img/link2.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+  .lin3{
+    background-image: url("img/link3.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+  .lin4{
+    background-image: url("img/link4.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+  .lin5{
+    background-image: url("img/link5.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+  .lin6{
+    background-image: url("img/link6.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
   }
 
   .index-boxlink-rectangle {
@@ -422,7 +457,7 @@ header nav ul li a {
 
 /*FOOTER*/
 footer {
-  width: calc(100% - 70px);
+  width: calc(100% - 80px);
   padding: 40px 40px;
   margin-top: 20px;
   background-color: #111;
@@ -470,9 +505,11 @@ footer ul li a {
   footer ul {
     padding-right: 30px;
   }
+
   #content-detail {
     padding-bottom: 6em !important;
   }
+
   .row {
     clear: both;
     max-width: 1040px;
@@ -488,29 +525,31 @@ footer ul li a {
     margin: 16px 16px 0;
     overflow: hidden;
   }
+
   .pie-chart .coder {
     float: right;
     margin-bottom: 0;
     text-align: center;
   }
+
   .pie-chart .designer {
     float: left;
     margin: 0;
     text-align: center;
-
   }
+
   .pie-chart img {
     width: auto;
-    padding:20px;
+    padding: 20px;
     text-align: center;
   }
+
   .pie-chart ul li {
     display: block;
-
   }
-  section.dark{
+
+  section.dark {
     padding: 6em 5%;
     overflow: hidden;
   }
-
 }
