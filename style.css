@@ -98,6 +98,7 @@ h2,
   text-rendering: optimizelegibility;
   font-weight: normal;
 
+
 }
 
 h1,
@@ -137,6 +138,7 @@ section.dark {
   border-bottom: #dddddd solid 1px;
   padding: 3em 1.5em;
   overflow: hidden;
+  margin-top: 20px;
 }
 
 /* Pie Chart */
@@ -259,6 +261,7 @@ header nav ul li a {
   background-position: center;
   background-size: cover;
   display: table;
+  padding-top: 180px;
 
 }
 
@@ -286,7 +289,7 @@ header nav ul li a {
 .index-links{
   border-bottom: #dddddd solid 1px;
   padding: 3em 1.5em;
-
+  overflow: hidden;
 }
 .index-links div {
   margin: 16px 16px 0;
@@ -392,7 +395,8 @@ header nav ul li a {
 /* Cases */
 .cases-links {
   overflow: hidden;
-  margin-bottom: 20px;
+  margin:0 auto;
+  padding-top: 150px;
 }
 
 .cases-links h2 {
@@ -462,7 +466,6 @@ footer {
   margin-top: 20px;
   background-color: #111;
   overflow: hidden;
-  border-radius: 10px;
 }
 
 footer ul {
@@ -505,7 +508,10 @@ footer ul li a {
   footer ul {
     padding-right: 30px;
   }
-
+.sticky-f{
+  min-height: calc(100vh- 290px);
+   margin-bottom: 300px;
+}
   #content-detail {
     padding-bottom: 6em !important;
   }
