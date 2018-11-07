@@ -129,30 +129,6 @@ ol.ol li {
   margin-bottom: 0.7em;
 }
 
-section.dark {
-  border-bottom: #dddddd solid 1px;
-  padding: 3em 1.5em;
-  overflow: hidden;
-  margin-top: 70px;
-}
-
-/* Pie Chart */
-.pie-chart {
-  text-align: center;
-  overflow: hidden;
-}
-
-.pie-chart ul {
-  list-style-type: none;
-  padding: 0;
-}
-
-.pie-chart .designer,
-.pie-chart .coder {
-  float: none;
-  margin-bottom: 3em;
-  overflow: hidden;
-}
 
 nav ul {
   list-style: none;
@@ -183,13 +159,13 @@ header {
   left: 0;
   background-color: #fff;
   width: 100%;
-  height: 70px;
+  height: 100px;
   z-index: 1;
 }
 
 header .header-brand {
   font-family: 'Nunito Sans', sans-serif;
-  font-size: 24px;
+  font-size: 28px;
   font-weight: 900;
   color: #111;
   display: block;
@@ -214,12 +190,118 @@ header nav ul li {
 header nav ul li a {
   font-family: 'Nunito Sans', sans-serif;
   font-size: 16px;
+  font-weight: bolder;
+  letter-spacing: 1px;
   color: #111;
 }
 
 #content-detail {
   position: relative;
 }
+
+.index-banner {
+  width: 100%;
+  height: 450px;
+  background-image: url('../../img/banner.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding-top: 180px;
+}
+
+.index-banner h2 {
+  font-family: 'Megrim', cursive;
+  font-size: 40px;
+  font-weight: 900;
+  line-height: 70px;
+  color: #fff;
+  text-align: center;
+  text-shadow: 1px 1px 5px #fff;
+}
+
+.index-banner h1 {
+  font-family: 'Nunito Sans', sans-serif;
+  font-size: 28px;
+  font-weight: 100;
+  line-height: 45px;
+  color: #fff;
+  text-align: center;
+  margin: 50px 20px;
+  text-shadow: 2px 2px 8px #111;
+}
+.index-banner span{
+  text-shadow: 3px 2px 8px #fff;
+  font-size: 1.4em;
+}
+.index-links {
+  border-bottom: #dddddd solid 1px;
+  padding: 3em 1.5em;
+  overflow: hidden;
+}
+
+.index-links div {
+  margin: 16px 16px 0;
+  width: calc(100% - 32px);
+  height: 100px;
+  background-color: #111;
+
+}
+
+.index-links div h3 {
+  font-family: 'Nunito Sans', sans-serif;
+  font-size: 28px;
+  font-weight: 600;
+  line-height: 100px;
+  color: #fff;
+  text-align: center;
+}
+/*  Chart*/
+section.dark {
+  border-bottom: #dddddd solid 1px;
+  padding: 3em 1.5em;
+  overflow: hidden;
+  margin-top: 70px;
+}
+
+/* Pie Chart */
+.pie-chart {
+  text-align: center;
+  overflow: hidden;
+}
+
+.pie-chart ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.pie-chart .designer,
+.pie-chart .coder {
+  float: none;
+  margin-bottom: 3em;
+  overflow: hidden;
+}
+.pie-chart img {
+  width: 60%;
+  justify-content: center;
+  background-color: red;
+  border-top-left-radius: 57%;
+  border-bottom-right-radius: 65%;
+  border-bottom-left-radius: 67%;
+  border-top-right-radius: 74%;
+  margin:5px;
+
+}
+.pie-chart .designer li,
+.pie-chart .coder li{
+  font-size: 1.4em;
+}
+.pie-chart .designer h2,
+.pie-chart .coder h2{
+  font-weight: bold;
+  text-shadow: 1px 1px 5px #111;
+}
+
+
 
 /*FOOTER*/
 footer {
@@ -236,23 +318,25 @@ footer ul {
   width: fit-content;
   float: left;
   padding-left: 20px;
-  padding-top: 20px;
   text-align: left;
 }
 
 footer ul li {
   display: block;
   list-style: none;
+  padding: 10px 10px;
 }
-
-footer ul li a {
+.footer-links-main a{
   font-family: 'Nunito Sans', sans-serif;
   font-size: 24px;
   color: #fff;
   line-height: 40px;
-  margin: 20px
+  margin: 70px auto;
+  padding-top: 10px
 }
-
+.footer-links-main .red{
+  color: red;
+}
 .footer-sm {
   width: 50px;
   float: right;
@@ -261,72 +345,21 @@ footer ul li a {
 
 .footer-sm img {
   width: 100%;
-  margin-bottom: 20px;
+padding: 10px
 }
+
 
 .left {
   float: left !important;
 }
-.red{
-  color: red;
-}
 
-/* style the header for the desktop version*/
-/*INDEX*/
-.index-banner {
-  width: 100%;
-  height: 450px;
-  ;
-  background-image: url('../../img/banner.jpg');
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  padding-top: 180px;
-}
+@media only screen and (min-width: 700px){
 
-.index-banner h2 {
-  font-family: 'Nunito Sans', sans-serif;
-  font-size: 60px;
-  font-weight: 900;
-  line-height: 70px;
-  color: #fff;
-  text-align: center;
-  text-shadow: 2px 2px 8px #111;
-}
-
-.index-banner h1 {
-  font-family: 'Nunito Sans', sans-serif;
-  font-size: 28px;
-  font-weight: 100;
-  font-style: italic;
-  line-height: 45px;
-  color: #fff;
-  text-align: center;
-  text-shadow: 2px 2px 8px #111;
-}
-
-.index-links {
-  border-bottom: #dddddd solid 1px;
-  padding: 3em 1.5em;
-  overflow: hidden;
-}
-
-.index-links div {
-  margin: 16px 16px 0;
-  width: calc(100% - 32px);
-  height: 100px;
-  background-color: #111;
-  letter-spacing: 1em;
-}
-
-.index-links div h3 {
-  font-family: 'Nunito Sans', sans-serif;
-  font-size: 28px;
-  font-weight: 600;
-  line-height: 100px;
-  color: #fff;
-  text-align: center;
-  letter-spacing: 0.1;
+  .index-links{
+    width: 80%;
+    justify-content: center;
+    margin: 0 auto;
+  }
 }
 
 /* style the main content for the desktop version*/
@@ -361,11 +394,14 @@ footer ul li a {
   .index-banner {
     height: 450px;
   }
-
+  .index-banner h2 {
+    font-family: 'Megrim', cursive;
+    font-size: 60px;
+}
   .index-banner h1 {
     display: block;
     width: 560px;
-    margin: 0 auto;
+    margin: 50px auto;
   }
 
   .index-links {
@@ -384,7 +420,10 @@ footer ul li a {
   .index-boxlink-square {
     width: calc(25% - 20px) !important;
   }
+header nav ul li a{
+font-size: 1.2em;
 
+}
   .lin2 {
     background-image: url("../../img/link2.jpg");
     background-repeat: no-repeat;
@@ -448,6 +487,10 @@ footer ul li a {
   }
 
   /* Pie chart */
+  .pie-chart{
+    justify-content: center;
+    margin:auto;
+  }
   .pie-chart .designer,
   .pie-chart .coder {
     padding-top: 3em;
@@ -468,9 +511,9 @@ footer ul li a {
   }
 
   .pie-chart img {
-    width: auto;
-    padding: 20px;
-    text-align: center;
+    width: 40%;
+    justify-content: center;
+    margin-top: 60px
   }
 
   .pie-chart ul li {
